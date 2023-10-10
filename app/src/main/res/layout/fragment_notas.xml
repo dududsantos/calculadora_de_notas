@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notas">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frame2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/nota02"
+            android:layout_width="318dp"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:hint="@string/inserirNota2"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.36" />
+
+        <EditText
+            android:id="@+id/nota03"
+            android:layout_width="318dp"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:hint="@string/inserirNota3"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.48" />
+
+        <TextView
+            android:id="@+id/notasTtile"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/notasTitle"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.076" />
+
+        <EditText
+            android:id="@+id/nota01"
+            android:layout_width="318dp"
+            android:layout_height="49dp"
+            android:autoText="false"
+            android:ems="10"
+            android:freezesText="false"
+            android:hint="@string/inserirNota"
+            android:inputType="number"
+            android:textIsSelectable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.231" />
+
+        <TextView
+            android:id="@+id/situacao"
+            android:layout_width="122dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="51dp"
+            android:text="@string/situacao"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.159"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nota03"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/situationText"
+            android:layout_width="196dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="160dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toTopOf="@+id/calcular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.234"
+            app:layout_constraintStart_toEndOf="@+id/situacao"
+            app:layout_constraintTop_toBottomOf="@+id/nota03"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/calcular"
+            android:layout_width="135dp"
+            android:layout_height="56dp"
+            android:background="@color/header"
+            android:text="@string/calcular"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nota03"
+            app:layout_constraintVertical_bias="0.895" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="316dp"
+            android:layout_height="97dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="32dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/calcular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/situationText"
+            app:layout_constraintVertical_bias="0.666" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
