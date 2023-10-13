@@ -1,5 +1,6 @@
 package com.example.calculadora_de_notas;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -48,6 +49,7 @@ public class Notas extends Fragment {
 
 
         calc.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 double n01 = 0;
@@ -55,7 +57,7 @@ public class Notas extends Fragment {
                 double n03 = 0;
 
                 if(!nota01.getText().toString().isEmpty()) {
-                     n01 = Double.valueOf(nota01.getText().toString());
+                     n01 = Double.parseDouble(nota01.getText().toString());
                 }
                 if(!nota02.getText().toString().isEmpty()) {
                      n02 = Double.valueOf(nota02.getText().toString());
